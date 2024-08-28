@@ -1,0 +1,24 @@
+﻿<Window x:Class="BetweenPoints.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BetweenPoints"
+             mc:Ignorable="d" 
+             Height="300" 
+             Width="150">
+    <StackPanel>
+        <Label Content="Выбрае элемент"
+               Margin="5"/>
+        <ComboBox ItemsSource="{Binding ListElement}"
+                  SelectedValue="{Binding SelectedElementInList }"
+                  DisplayMemberPath="Name"
+                  Margin="5"/>
+        <Label Content="Количество:"
+               Margin="5"/>
+        <TextBox Text="{Binding Step}"/>
+        <Button Content="Применить"
+                Command="{Binding SaveCommand}"
+                Margin="5"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\Program Files\RevitAPI\BetweenPoints.dll"</Assembly>
+		<AddInId>F078AC31-AFD5-4C24-9780-1CB007157B20</AddInId>
+		<FullClassName>BetweenPoints.Main</FullClassName>
+		<VendorId>ADSC</VendorId>
+		<Text>Между точками</Text>	
+	</AddIn>
+</RevitAddIns>
+
